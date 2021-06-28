@@ -44,14 +44,18 @@
       <h2 class="headersubtitle">En plein centre ville ou en pleine nature</h2>
       <div class="searchbox">
         <span class="searchicon"><i class="fas fa-map-marker-alt"></i></span>
-        <input
-          class="searcharea"
-          type="search"
-          name=""
-          id=""
-          placeholder="Marseille, France"
-        />
-        <button class="searchbutton">Rechercher</button>
+        <form role="search">
+          <div>
+            <input
+              type="searcharea"
+              id="maRecherche"
+              name="q"
+              placeholder="Marseille, france"
+              aria-label="Rechercher un lieu"
+            />
+            <button>Rechercher</button>
+          </div>
+        </form>
       </div>
 
       <!-- Filtres -->
@@ -64,23 +68,22 @@
           <span class="filterecotitle">Économique</span>
         </div>
         <div class="filterfamily">
-          <span class="filterfamilyicon"
-            ><i class="fas fa-child"></i></span>
+          <span class="filterfamilyicon"><i class="fas fa-child"></i></span>
           <span class="filterfamilytitle">Familial</span>
         </div>
         <div class="filterlovely">
-          <span class="filterlovelyicon"
-            ><i class="fas fa-heart"></i></span>
+          <span class="filterlovelyicon"><i class="fas fa-heart"></i></span>
           <span class="filterlovelytitle">Romantique</span>
         </div>
         <div class="filterpet">
-          <span class="filterpeticon"></span><i class="fas fa-dog"></i>
-          </span>
+          <span class="filterpeticon"><i class="fas fa-dog"></i> </span>
           <span class="filterpettitle">Animaux autorisés</span>
         </div>
         <div class="searchresult">
           <div class="searchresulticon"><i class="fas fa-info"></i></div>
-          <p class="searchresulttext">Plus de 500 logements sont disponibles dans cette ville</p>
+          <p class="searchresulttext">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
         </div>
       </div>
     </section>
