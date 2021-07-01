@@ -1,4 +1,64 @@
 body {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-areas: "logo none navbar signup";
+  align-items: center;
+  margin: auto;
+}
+
+.logo img {
+  grid-area: logo;
+  padding: 0 2rem;
+  height: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: navbar;
+}
+
+.hosting {
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-top: 3px solid blue;
+}
+
+.activity {
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: signup;
+  padding: 0 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.headertitle {
+  margin-bottom: 0.5rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.headersubtitle {
+  margin-top: 0;
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
