@@ -111,3 +111,123 @@ a:visited {
   cursor: pointer;
   margin: 0;
 }
+
+.filterscategorie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filterstitle {
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filtereco {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.filtereco:hover {
+  background-color: #deebff;
+}
+
+.filterecoicon {
+  padding: 1rem;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 2rem;
+}
+
+.filterecotitle {
+  font-family: "raleway", "sans serif";
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.filterfamily {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.filterfamilyicon {
+  padding: 1rem;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 2rem;
+}
+
+.filterfamilytitle {
+  font-family: "raleway", "sans serif";
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.filterlovely {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.filterlovelyicon {
+  padding: 1rem;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 2rem;
+}
+
+.filterlovelytitle {
+  font-family: "raleway", "sans serif";
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.filterpet {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.filterpeticon {
+  padding: 1rem;
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 2rem;
+}
+
+.filterpettitle {
+  font-family: "raleway", "sans serif";
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.searchresult {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.searchresulticon {
+  color: #0065fc;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+}
+
+.searchresulttext {
+  margin: 0.5rem;
+}
