@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a:visited {
+  color: none;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr;
@@ -29,15 +33,22 @@ body {
   padding: 2rem;
   font-weight: 500;
   text-align: center;
+  color: #0065fc;
   text-decoration: none;
-  border-top: 3px solid blue;
+  border-top: 3px solid #0065fc;
 }
 
 .activity {
   padding: 2rem;
   font-weight: 500;
+  color: black;
   text-align: center;
   text-decoration: none;
+}
+
+.activity:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
 
 .signup {
@@ -47,6 +58,7 @@ body {
   grid-area: signup;
   padding: 0 2rem;
   font-weight: 600;
+  color: #0065fc;
   text-decoration: none;
 }
 
@@ -61,4 +73,41 @@ body {
   padding: 0 2rem;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.searchbox {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.searchicon {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.searchtext {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  width: 14rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway", "sans serif";
+  margin: 0;
+}
+
+.searchbutton {
+  background-color: #0065fc;
+  color: white;
+  font-family: "raleway", "sans serif";
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0 1rem 1rem 0;
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0;
 }
