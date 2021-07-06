@@ -1,11 +1,8 @@
 body {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
-  margin: 0;
-}
-
-a:visited {
-  color: none;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .header {
@@ -29,7 +26,7 @@ a:visited {
   grid-area: navbar;
 }
 
-.hosting {
+.hostinglink {
   padding: 2rem;
   font-weight: 500;
   text-align: center;
@@ -38,7 +35,7 @@ a:visited {
   border-top: 3px solid #0065fc;
 }
 
-.activity {
+.activitylink {
   padding: 2rem;
   font-weight: 500;
   color: black;
@@ -46,7 +43,7 @@ a:visited {
   text-decoration: none;
 }
 
-.activity:hover {
+.activitylink:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
@@ -56,7 +53,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   grid-area: signup;
-  padding: 0 2rem;
+  padding: 0;
   font-weight: 600;
   color: #0065fc;
   text-decoration: none;
@@ -81,8 +78,11 @@ a:visited {
 }
 
 .searchicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f2f2f2;
-  padding: 1rem;
+  padding: 1rem 1.2rem;
   border-radius: 1rem 0 0 1rem;
 }
 
@@ -132,7 +132,8 @@ a:visited {
 }
 
 .filtereco:hover {
-  background-color: #deebff;
+  background-color: #f3f8ff;
+  transform: scale(1.1);
 }
 
 .filterecoicon {
@@ -157,6 +158,11 @@ a:visited {
   cursor: pointer;
 }
 
+.filterfamily:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.1);
+}
+
 .filterfamilyicon {
   padding: 1rem;
   background-color: #deebff;
@@ -179,6 +185,11 @@ a:visited {
   cursor: pointer;
 }
 
+.filterlovely:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.1);
+}
+
 .filterlovelyicon {
   padding: 1rem;
   background-color: #deebff;
@@ -199,6 +210,11 @@ a:visited {
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
+}
+
+.filterpet:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.1);
 }
 
 .filterpeticon {
@@ -230,4 +246,62 @@ a:visited {
 
 .searchresulttext {
   margin: 0.5rem;
+}
+
+/* Section Hébergement */
+
+.hostingsection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  background-color: #f2f2f2;
+  margin: 0 2rem;
+  border-radius: 1rem;
+}
+
+.hostingtitle {
+  grid-column: 1/-1;
+}
+
+.imghotel {
+  height: 7rem;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hotel {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.hotel:hover {
+  transform: scale(1.02);
+}
+
+.casetext {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+
+.hotelname {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.hotelprice {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.stars {
+  display: flex;
+  color: #0065fc;
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.showmore {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
