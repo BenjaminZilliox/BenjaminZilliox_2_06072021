@@ -129,6 +129,7 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .filtereco:hover {
@@ -156,6 +157,7 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .filterfamily:hover {
@@ -183,6 +185,7 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .filterlovely:hover {
@@ -210,6 +213,7 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .filterpet:hover {
@@ -250,18 +254,25 @@ body {
 
 /* Section Hébergement */
 
+.hosting {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
 .hostingsection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
   background-color: #f2f2f2;
-  margin: 0 2rem;
+  margin: 0 1rem;
+  padding: 0 1rem;
   border-radius: 1rem;
 }
 
 .hostingtitle {
   grid-column: 1/-1;
+  margin: 1rem 0 0 1rem;
 }
 
 .imghotel {
@@ -276,7 +287,8 @@ body {
   background-color: white;
   padding: 0.375rem;
   border-radius: 1rem;
-  margin: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .hotel:hover {
@@ -304,4 +316,51 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+/* Section Les plus populaire */
+
+.mostpopular {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  background-color: #f2f2f2;
+  margin: 0 2rem;
+  border-radius: 1rem;
+}
+
+.populartitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 2rem;
+}
+
+.popularicon {
+  font-size: 2rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.imgpopular {
+  width: 135px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.popular {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  padding: 0.375rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popular:hover {
+  transform: scale(1.02);
+}
+
+.popular .stars {
+  margin-top: 3rem;
 }
