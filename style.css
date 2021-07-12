@@ -79,10 +79,11 @@ body {
 
 .searchbox {
   display: flex;
+  flex-wrap: nowrap;
   padding: 0 2rem;
 }
 
-.searchicon {
+.geoicon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +116,10 @@ body {
   border-color: transparent;
   cursor: pointer;
   margin: 0;
+}
+
+.searchicon {
+  display: none;
 }
 
 .filterscategorie {
@@ -528,6 +533,7 @@ footer h2 {
 /************** RESPONSIVE *************/
 
 @media (max-width: 530px) {
+  /********* Partie Header MOBILE ********/
   .navbar {
     grid-row: 2;
     grid-column: 1 / 5;
@@ -544,5 +550,35 @@ footer h2 {
   }
   .signup {
     grid-column: 2 / 5;
+  }
+
+  /*********** Partie Recherche MOBILE ********/
+
+  .headertitle {
+    font-size: 1.5rem;
+  }
+
+  .searchbutton {
+    display: none;
+  }
+
+  .searchicon {
+    display: block;
+    background-color: #0065fc;
+    color: white;
+    font-family: "raleway", "sans serif";
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .searchtext {
+    width: 13rem;
+  }
+
+  .searchbox div {
+    display: flex;
   }
 }
