@@ -578,7 +578,63 @@ footer h2 {
     width: 13rem;
   }
 
+  /********** Partie Filtres MOBILE **********/
+
   .searchbox div {
     display: flex;
   }
+
+  .filterstitle {
+    margin: 2rem;
+  }
+
+  .filtereco,
+  .filterfamily,
+  .filterlovely,
+  .filterpet {
+    margin: 0.5rem 2rem 0.5rem 2rem;
+  }
+
+  /********** Partie Les plus populaire MOBILE *********/
+
+  .hostingsection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .mostpopular {
+    grid-row: 1;
+    width: 90vw;
+    margin: 1rem;
+  }
+
+  .hostingsection {
+    grid-row: 2;
+    width: 82vw;
+  }
+
+  .populartitle {
+    font-size: 0.9rem;
+  }
+
+  .popularicon {
+    font-size: 1.2rem;
+  }
+
+  .casetext {
+    font-size: 0.8rem;
+  }
+  .popular .stars {
+    margin: 0 0 0 0.5rem;
+  }
+
+  .imgpopular {
+    width: 100%;
+  }
+
+  .popular3 {
+    height: 70%;
+  }
+
+  /********** Partie Activités MOBILE *********/
 }
