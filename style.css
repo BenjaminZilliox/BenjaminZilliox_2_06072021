@@ -308,10 +308,11 @@ body {
 }
 
 .casetext {
-  margin: 0.25rem 0.75rem 0 0.75rem;
+  margin: 0.25rem 0.75rem 0 0;
 }
 
 .hotelname {
+  font-size: 1.1rem;
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
 .hotelprice {
