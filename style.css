@@ -637,4 +637,23 @@ footer h2 {
   }
 
   /********** Partie Activités MOBILE *********/
+
+  .activity {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  /********** Footer MOBILE *********/
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about,
+  .ourhosting,
+  .assistance {
+    width: 100%;
+  }
 }
