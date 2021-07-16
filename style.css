@@ -1,5 +1,4 @@
 body {
-  scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
@@ -81,6 +80,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .geoicon {
@@ -122,21 +122,30 @@ body {
   display: none;
 }
 
+/**************** Partie Filtre **********/
+
 .filterscategorie {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .filterstitle {
   display: flex;
   align-items: center;
-  margin: 2rem;
+  margin: auto 2rem;
+}
+
+.filtereco,
+.filterfamily,
+.filterlovely,
+.filterpet {
+  margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .filtereco {
   display: flex;
   align-items: center;
-  margin: 2rem;
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -164,7 +173,6 @@ body {
 .filterfamily {
   display: flex;
   align-items: center;
-  margin: 2rem;
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -192,7 +200,6 @@ body {
 .filterlovely {
   display: flex;
   align-items: center;
-  margin: 2rem;
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -220,7 +227,6 @@ body {
 .filterpet {
   display: flex;
   align-items: center;
-  margin: 2rem;
   border: 2px solid #f2f2f2;
   border-radius: 2rem;
   cursor: pointer;
@@ -391,6 +397,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 2.5rem;
+  grid-template-rows: auto 10rem 2rem 2rem 2rem 10rem;
   margin: 2.2rem;
 }
 
@@ -417,33 +424,34 @@ body {
   padding: 1rem;
 }
 
-.column2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.activity1 {
+  grid-column: 1 / 2;
+  grid-row: 2/7;
 }
 
 .activity2 {
-  height: 50%;
-  border-radius: 1rem;
+  grid-column: 2 / 3;
+  grid-row: 2/5;
 }
 
 .activity3 {
-  height: 35%;
+  grid-column: 2 / 3;
+  grid-row: 6/7;
 }
 
-.column4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.activity4 {
+  grid-column: 3 / 4;
+  grid-row: 2/7;
 }
 
 .activity5 {
-  height: 45%;
+  grid-column: 4 / 5;
+  grid-row: 2/4;
 }
 
 .activity6 {
-  height: 40%;
+  grid-column: 4 / 5;
+  grid-row: 5/7;
 }
 
 .imgactivity1 {
@@ -582,15 +590,14 @@ footer h2 {
     width: 13rem;
   }
 
-  /********** Partie Filtres MOBILE **********/
-
+  .searchbox {
+    margin-bottom: 2rem;
+  }
   .searchbox div {
     display: flex;
   }
 
-  .filterstitle {
-    margin: 2rem;
-  }
+  /********** Partie Filtres MOBILE **********/
 
   .filtereco,
   .filterfamily,
@@ -643,9 +650,12 @@ footer h2 {
   /********** Partie Activités MOBILE *********/
 
   .activity {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activitycard {
+    margin: 2rem 0;
   }
 
   /********** Footer MOBILE *********/
@@ -699,5 +709,15 @@ footer h2 {
   .hostingsection {
     grid-row: 2;
     grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 900px) {
+  .activity {
+    display: flex;
+    flex-direction: column;
+  }
+  .activitycard {
+    margin: 2rem 0;
   }
 }
